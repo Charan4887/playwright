@@ -2,7 +2,7 @@
   "name": "playwright",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {"merge-reports": "playwright merge-reports --reporter html ./blob-report"},
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
