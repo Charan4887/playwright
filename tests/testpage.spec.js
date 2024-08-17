@@ -70,7 +70,7 @@ await page.locator('#products-orderby').selectOption({index:1});
 
 await page.locator('#products-pagesize').selectOption({index:0});
 
-await page.locator("a[href='/apparel-shoes?orderby=5&pagesize=4&pagenumber=3']").click();
+await page.locator(".individual-page").first().click();
 
 await page.locator('.button-2.product-box-add-to-cart-button').first().click();
 
@@ -78,4 +78,5 @@ await page.locator('#add-to-cart-button-10').click();
 
 
 });
+
 
