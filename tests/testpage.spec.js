@@ -74,7 +74,7 @@ await page.locator(".individual-page").first().click();
 
 await page.locator('.button-2.product-box-add-to-cart-button').first().click();
 
-await page.locator('#add-to-cart-button-10').click();
+await page.locator('.button-1.add-to-cart-button').click();
 
 
 });
