@@ -76,7 +76,6 @@ await page.locator('.button-2.product-box-add-to-cart-button').first().click();
 
 await page.locator('.button-1.add-to-cart-button').click();
 
-
 });
 
 
