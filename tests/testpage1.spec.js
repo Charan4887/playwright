@@ -25,6 +25,7 @@ test("register2page", async ({page}) => {
    await expect(page).toHaveTitle("Demo Web Shop. Register");
 });
 
+
 test("register3page", async ({page}) => {
     await page.goto("https://demowebshop.tricentis.com/register");
 
@@ -36,7 +37,20 @@ test("register3page", async ({page}) => {
 
 });
 
+
+
 test("register4page", async ({page}) => {
+    await page.goto("https://demowebshop.tricentis.com/register");
+
+    const value = { name: "Newsletter" };
+
+    expect(value).toBeTruthy();
+
+
+});
+
+
+test("register5page", async ({page}) => {
     await page.goto("https://demowebshop.tricentis.com/register");
 
    await page.locator("#gender-male").click();
@@ -45,12 +59,7 @@ test("register4page", async ({page}) => {
    
    await page.fill("#LastName","allem");
    
-   await page.fill("#Email","allem13@gmail.com");
-
-});
-
-test("register5page", async ({page}) => {
-    await page.goto("https://demowebshop.tricentis.com/register");
+   await page.fill("#Email","allem4887@gmail.com");
 
    await page.fill("#Password","john@123");
    
